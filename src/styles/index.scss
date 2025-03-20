@@ -5,4 +5,10 @@
   padding: 0;
   box-sizing: 'border-box';
   font-family: 'Proxima Nova';
+  font-face: 'Proxima Nova';
+}
+
+.scrollbar-hidden {
+  scrollbar-width: 2px;
+  overflow-y: scroll;
 }

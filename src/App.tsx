@@ -1,14 +1,11 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import Sidebar from './components/Sidebar';
-import Header from './components/Header';
 import Report from './Pages/Report';
+import './styles/index.scss'
+import Header from './components/Header';
 
-const bgcolors = {
-  sidebar: '#54D3C2',
-  main: '#F8F8F8',
-  header: '#FFFFFF',
-}
+const siderWidth: number = 130;
 
 const styles = {
   position: 'absolute',
@@ -22,10 +19,13 @@ const styles = {
 const App: React.FC = () => {
   return (
     <Box sx={{ position: 'relative', zIndex: 0, height: '100vh', borderRadius: 15, overflow: 'hidden' }}>
-      <Box component='main' sx={{ ...styles, left: 130, bgcolor: bgcolors.main, zIndex: 2 }}>
+      <Box component='main' sx={{ ...styles, left: siderWidth, width: `calc(100% - ${siderWidth}px)`, bgcolor: '#fff', zIndex: 2, height: 300 }}>
+        <Header />
+      </Box>
+      <Box component='main' sx={{ ...styles, left: siderWidth, top: 154, width: `calc(100% - ${siderWidth}px)`, bgcolor: 'primary.main', zIndex: 3}}>
         <Report />
       </Box>
-      <Box component='aside' sx={{ ...styles, bgcolor: bgcolors.sidebar, zIndex: 1 }}>
+      <Box component='aside' sx={{ ...styles, bgcolor: 'secondary.main', zIndex: 1 }}>
         <Sidebar />
       </Box>
     </Box>

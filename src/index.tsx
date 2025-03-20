@@ -6,17 +6,22 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
-    primary: {
-      main: '#03a688',
-    },
     secondary: {
-      main: '#f50057',
+      main: '#54D3C2',
     },
+    primary: {
+      main: '#F8F8F8',
+    },
+    success: {
+      main: '#54D3C2',
+    },
+    error: {
+      main: '#FC5C65',
+    }
   },
-  // typography: {
-  //   fontFamily: 'Roboto, sans-serif',
-  // },
+  typography: {
+    fontFamily: 'Proxima nova, Roboto',
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

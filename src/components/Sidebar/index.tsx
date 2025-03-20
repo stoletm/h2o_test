@@ -2,23 +2,17 @@ import React from 'react';
 import {
   Drawer,
   Box,
-  Typography,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Stack,
+  Typography, ListItem, Stack
 } from '@mui/material';
 
-
-import archive from '../assets/icons/archive.svg';
-import gear from '../assets/icons/gear.svg';
-import users from '../assets/icons/users.svg';
-import chart from '../assets/icons/chart.svg';
-import calendar from '../assets/icons/calendar.svg';
-import coins from '../assets/icons/coins.svg';
-import tasks from '../assets/icons/tasks.svg';
-import logo from '../assets/icons/logo.svg';
+import archive from '../../assets/icons/archive.svg';
+import gear from '../../assets/icons/gear.svg';
+import users from '../../assets/icons/users.svg';
+import chart from '../../assets/icons/chart.svg';
+import calendar from '../../assets/icons/calendar.svg';
+import coins from '../../assets/icons/coins.svg';
+import tasks from '../../assets/icons/tasks.svg';
+import logo from '../../assets/icons/logo.svg';
 
 const drawerWidth = 267;
 
@@ -92,13 +86,10 @@ const Sidebar: React.FC = () => {
               display: 'flex',
               alignContent: 'center',
               justifyContent: 'center',
-              // textAlign: 'center',
               borderRadius: 5,
               bgcolor: route.isActive ? '#A9E9E0' : '',
             }} disablePadding key={route.key}>
-              {/* <NavLink to={`/${route.key}`} key={index}> */}
                 <img src={route.icon} alt={route.key} />
-              {/* </NavLink> */}
           </ListItem>
         ))}
       </Stack>
