@@ -52,6 +52,11 @@ const Chart: React.FC<ChartProps> = ({ data, activeDivision }) => {
           sx={{ mb: 2, border: 'none' }}
           >
             {periods.map((item) => {
+              let periodName: string = item.title;
+              if (item.value === 'month' && period === 'month') {
+                const month = months.find(i => i.value === chartMonth);
+                periodName = `${periodName} (${month?.title})`
+              }
               return <>
                 <ToggleButton
                   id='fade-button'
@@ -73,7 +78,7 @@ const Chart: React.FC<ChartProps> = ({ data, activeDivision }) => {
                     }
                   }}
                 >
-                  {item.title}
+                  {periodName}
                 </ToggleButton>
                 <Menu
                   id="fade-menu"
