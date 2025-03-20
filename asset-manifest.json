@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/h2o_test/static/css/main.72bde6ed.css",
-    "main.js": "/h2o_test/static/js/main.c6966dae.js",
+    "main.js": "/h2o_test/static/js/main.7f8d3cdb.js",
     "static/media/ProximaNova-Bold.woff": "/h2o_test/static/media/ProximaNova-Bold.1f267da183b3d4fe3d5b.woff",
     "static/media/ProximaNova-Semibold.woff": "/h2o_test/static/media/ProximaNova-Semibold.a71877a1eef65838ed4c.woff",
     "static/media/ProximaNova-Extrabld.woff": "/h2o_test/static/media/ProximaNova-Extrabld.64f095e95e4018946cb1.woff",
@@ -17,10 +17,10 @@
     "static/media/archive.svg": "/h2o_test/static/media/archive.c20dbc57eb1b88069c23868d6be20102.svg",
     "static/media/arrow.svg": "/h2o_test/static/media/arrow.b2d8feb611cc3b8396171e99ffe930bc.svg",
     "main.72bde6ed.css.map": "/h2o_test/static/css/main.72bde6ed.css.map",
-    "main.c6966dae.js.map": "/h2o_test/static/js/main.c6966dae.js.map"
+    "main.7f8d3cdb.js.map": "/h2o_test/static/js/main.7f8d3cdb.js.map"
   },
   "entrypoints": [
     "static/css/main.72bde6ed.css",
-    "static/js/main.c6966dae.js"
+    "static/js/main.7f8d3cdb.js"
   ]
 }
